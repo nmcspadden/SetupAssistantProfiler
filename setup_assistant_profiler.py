@@ -28,3 +28,12 @@ try:
 except IOError:
     print >> sys.stderr, "Error: can't write profile at %s" % profilePath
     sys.exit(1)
+
+cmd = ['usr/bin/profiles', '-IvF', profilePath]
+proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+(profileOut, profileErr) = proc.communicate()
+
+if profileErr:
+    print >> sys.stderr, 'Error: %s' % profileErr
+    sys.exit(1)
+print profileOut
