@@ -2,7 +2,7 @@
 
 This tool installs a system level profile and a script for use with [Outset](https://github.com/chilcote/outset).  This profile is designed to skip the Setup Assistant that launches every time a new build of OS X is installed, and the script modifies the profile to match the currently installed version and build of OS X.
 
-*NOTE: While a generic package is supplied, it is recommended to build your own. A makefile is included for use with [Luggage](https://github.com/unixorn/luggage)*
+*NOTE: A makefile is included for use with [Luggage](https://github.com/unixorn/luggage)*
 
 This has been tested on OS X 10.10.3 and 10.10.4. Future Yosemite upgrades should work but retesting may need to take place for OS X 10.11.
 
