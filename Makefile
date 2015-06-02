@@ -17,7 +17,7 @@ pack-usr-local-outset-everyboot-scripts-%: % l_usr_local_outset_everyboot_script
 
 l_library_profiles: l_Library
 	@sudo mkdir -p ${WORK_D}/Library/Profiles
-	@sudo chown root:admin ${WORK_D}/Library/Profiles
+	@sudo chown root:wheel ${WORK_D}/Library/Profiles
 	@sudo chmod 755 ${WORK_D}/Library/Profiles
 
 pack-library-profiles-%: % l_library_profiles
