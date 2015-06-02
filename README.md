@@ -22,6 +22,8 @@ Change the identifier below to match your organization:
 ```
 /bin/mkdir -p SetupAssistantProfiler/Library/Profiles
 /bin/mkdir -p SetupAssistantProfiler/usr/local/outset/everyboot-scripts
+/bin/cp SetupAssistant.mobileconfig SetupAssistantProfiler/Library/Profiles/
+/bin/cp setup_assistant_profiler.py SetupAssistantProfiler/usr/local/outset/everyboot-scripts/
 /usr/bin/pkgbuild --root SetupAssistantProfiler --identifier com.github.nmcspadden.outset.setupassistantprofiler --version 1.0 Outset-SetupAssistantProfiler.pkg
 ```
 
