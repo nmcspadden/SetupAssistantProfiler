@@ -16,7 +16,16 @@ Place the `setup_assistant_profiler.py` script into `/usr/local/outset/everyboot
 On boot, the profile will be dynamically modified to match the current OS version and build, and then reinstalled, thus permanently bypassing the Setup Assistant that shows up with new versions.
 
 
-## Creating a Custom Package
+## Creating a Custom Package with pkgbuild:
+Change the identifier below to match your organization:
+
+```
+/bin/mkdir -p SetupAssistantProfiler/Library/Profiles
+/bin/mkdir -p SetupAssistantProfiler/usr/local/outset/everyboot-scripts
+/usr/bin/pkgbuild --root SetupAssistantProfiler --identifier com.github.nmcspadden.outset.setupassistantprofiler --version 1.0 Outset-SetupAssistantProfiler.pkg
+```
+
+## Creating a Custom Package with the Luggage:
 Install Luggage and open the Makefile. Change the ```REVERSE_DOMAIN``` and if desired the ```PACKAGE_VERSION``` and ```TITLE```
 
 Running the following command in the working directory
