@@ -16,6 +16,8 @@
 							<dict>
 								<key>DidSeeCloudSetup</key>
 								<true/>
+								<key>DidSeeSiriSetup</key>
+								<true/>
 								<key>LastSeenBuddyBuildVersion</key>
 								<string>14D136</string>
 								<key>LastSeenCloudProductVersion</key>
